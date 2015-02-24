@@ -1,12 +1,11 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
+  
 # command to install dependencies
 install: 
 - pip install Django==1.7.4
 # command to run tests
-script: nosetests
+script: 
+- cd mysite\training
+- nosetests
