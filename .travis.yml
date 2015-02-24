@@ -1,11 +1,11 @@
 language: python
 python:
   - "2.7"
-  
 # command to install dependencies
 install: 
-- pip install Django==1.7.4
+  - pip install Django==1.7.4
+  - setenv DJANGO_SETTINGS_MODULE "mysite.settings"
 # command to run tests
 script: 
-- cd mysite/training
-- nosetests
+  - cd mysite/training
+  - nosetests
