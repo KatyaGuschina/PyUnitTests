@@ -14,6 +14,9 @@ class Test(unittest.TestCase):
     
     def test2(self):
         pass
+    
+    def test3(self):
+        self.assertEqual(2, 3)
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.test1']
